@@ -1,8 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
+import {Route} from 'react-router-dom'; 
+import HomePage from './component/pages/HomePage';
+import LoginPage from './component/pages/LoginPage';
 
 const App = () => 
 <div>
-  <h2>Notes application!</h2>
+  <Route path='/' exact component={HomePage} />
+  <Route path='/login' exact component={LoginPage} />
 </div>;
 
 export default App;
