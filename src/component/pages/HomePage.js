@@ -1,7 +1,7 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import {Button} from 'react-bootstrap';
 import Heading from '../banners/Heading';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 const HomePage = () => 
 {

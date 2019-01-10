@@ -19,8 +19,7 @@ class LoginForm extends Component
 
     }
 
-    handleInputChange = (e) =>
-    {
+    handleInputChange = (e) => {
         var event = e.target;
 
         var newState = { data : {} };
