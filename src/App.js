@@ -1,15 +1,20 @@
 import React from 'react';
-import {Route} from 'react-router-dom'; 
-import HomePage from './component/pages/HomePage';
-import LoginPage from './component/pages/LoginPage';
-import SignupPage from './component/pages/SignupPage';
-import {Grid} from 'react-bootstrap';
+import { BrowserRouter as Router } from "react-router-dom";
+import Routes from './Routes';
 
-const App = () => 
-<Grid style={{marginTop: "30px"}}>
-  <Route path='/' exact component={HomePage} />
-  <Route path='/login' exact component={LoginPage} />
-  <Route path='/signup' exact component={SignupPage} />
-</Grid>;
+class App extends React.Component {
+  render() {
+    return (
+      /*<div className="vinay">
+        <h2>Vinay Mehta..!!</h2>
+      </div>*/
+      <Router>
+        <div className="app">
+          <Routes />
+        </div>
+      </Router>
+    );
+  }
+}
 
 export default App;
