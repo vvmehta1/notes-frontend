@@ -10,14 +10,6 @@ const config = {
     filename: 'bundle.js'
   },
 
-  /*
-  output: {
-    path: path.join(__dirname, 'dist'),
-    filename: 'bundle.js',
-    publicPath: '/public/'
-  },
-  */
-
   mode: 'development',
 
   module: {
