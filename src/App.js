@@ -1,16 +1,18 @@
 import React from 'react';
-import {Switch, Route, Link} from 'react-router-dom'; 
-import HomePage from './component/pages/HomePage';
-import LoginPage from './component/pages/LoginPage';
-import SignupPage from './component/pages/SignupPage';
-import {Grid} from 'react-bootstrap';
+import { BrowserRouter as Router } from "react-router-dom";
+//import './App.css';
+import Routes from './Routes';
 
-const App = () => (
-  <Switch>
-    <Route path='/' exact component={HomePage} />
-    <Route path='/login' exact component={LoginPage} />
-    <Route path='/signup' exact component={SignupPage} />
-  </Switch>
-);
+class App extends React.Component {
+  render() {
+    return (
+      <Router>
+        <div className="app">
+          <Routes />
+        </div>
+      </Router>
+    );
+  }
+}
 
 export default App;
